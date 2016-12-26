@@ -170,6 +170,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SysSampleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,12 +211,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\SysSample\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\" />
     <Folder Include="Content\themes\" />
-    <Folder Include="Views\SysSample\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -224,6 +225,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apps.Common\Apps.Common.csproj">
+      <Project>{fdca86cc-d667-4e2b-a20b-a3d1b14edce3}</Project>
+      <Name>Apps.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apps.Core\Apps.Core.csproj">
+      <Project>{18599948-18cb-4fb0-9d85-49e79ec931f9}</Project>
+      <Name>Apps.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apps.Locale\Apps.Locale.csproj">
+      <Project>{30cdf0d3-c1cc-4dc7-a213-b6e994bd2a03}</Project>
+      <Name>Apps.Locale</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

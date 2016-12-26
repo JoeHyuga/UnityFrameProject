@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Apps.Jobs
+namespace Apps.IBLL
 {
-    public class Class1
+    public interface ISysSampleBLL
     {
     }
 }
